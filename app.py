@@ -22,7 +22,9 @@ with st.sidebar:
     st.divider()
     st.subheader("🏢 Departments")
     for name, d in DEPARTMENTS.items():
-        st.markdown(f"{d['icon']} **{name}**  \n<small>{d['scope']}</small>", unsafe_allow_html=True)
+        st.markdown(
+            f"{d['icon']} **{name}**  \n<small>{d['scope']}</small>", unsafe_allow_html=True
+        )
     if st.button("🗑️ Clear chat"):
         st.session_state.history = []
         st.rerun()
@@ -60,7 +62,9 @@ if question:
         with st.status("Agents are working…", expanded=True) as status:
             st.write("🔍 Research & Triage agent is analysing the question…")
             try:
-                triage, answer = asyncio.run(run_support_pipeline(question, provider, model, api_key))
+                triage, answer = asyncio.run(
+                    run_support_pipeline(question, provider, model, api_key)
+                )
             except Exception as e:
                 status.update(label="Failed", state="error")
                 st.error(f"Error: {e}")

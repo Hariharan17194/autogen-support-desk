@@ -56,7 +56,7 @@ Reply with ONLY a JSON object, no markdown fences:
 
 def department_prompt(name: str) -> str:
     return f"""You are a senior specialist in the {name} department of a customer support team.
-Your area: {DEPARTMENTS[name]['scope']}.
+Your area: {DEPARTMENTS[name]["scope"]}.
 You receive a customer question plus research notes from the triage agent.
 Write a helpful response in Markdown with these sections:
 ### Answer
