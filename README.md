@@ -22,6 +22,12 @@ In real support operations, the slowest part of a ticket is often the **first ho
 
 Built by someone who spent 2+ years answering those tickets by hand.
 
+## ✦ Skills demonstrated
+
+**Agentic AI** · AutoGen AgentChat · multi-agent routing · structured LLM output · defensive parsing · specialist handoffs · prompt design · Streamlit · automated tests
+
+**Course progression:** turns the Week 5 AutoGen concepts—agents, messages, teams, tools and handoffs—into a support workflow with explicit routing, confidence and a safe fallback path.
+
 ## ✦ How it works
 
 ```mermaid
